@@ -1,74 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>Assignment 1 </title>
- <link rel="stylesheet" href="style.css">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-h1{
- color:red;
-}
-
-body{
-background-color:powderblue;
-font-size: 11px;
-  font-family:courier;
-}
-
-table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 2px;
-        }
-        table {
-            width: 30%;
-            margin-top: 30px;
-        }
-</style>
 <body>
-<h1> SPU our pride</h1>
+    <h1>SPU our pride</h1>
 
-<a href = "https://www.spu.ac.za/index.php/faculty-of-natural-and-applied-sciences-home/"> SPU FNAS </a>
-<h2> SPU FNAS </h2>
-<img src = "SPU.jpg" width=300 height=200>
-<p>
+    <a href="https://www.spu.ac.za/index.php/faculty-of-natural-and-applied-sciences-home/">SPU FNAS</a>
+    <h2>SPU FNAS</h2>
+    
+    <!-- Make sure to upload the SPU.jpg file! -->
+    <img src="SPU.jpg" width="300" height="200">
+    
+    <p>
+        The Sol Plaatje University, which had provisionally been referred to as the University of the Northern Cape,<br>
+        opened in Kimberley, South Africa, in 2014, accommodating a modest initial intake of 135 students.<br>
+        The student complement is expected to increase gradually towards a target of 7,500 students by 2024.
+    </p>
 
- The Sol Plaatje University, which had provisionally been referred to as the University of the Northen Cape, <br>opened in kimberly, South Africa, in 2014, accommodating a modest initial intake of 135 students.<br> The student complement is expected to increase gradually towards target of 7 500 students by 2024. 
+    <table>
+        <tr>
+            <th>Faculties</th>
+            <th>Deans</th>
+        </tr>
+        <tr>
+            <td>NAS</td>
+            <td>Prof Ntwaeborwa</td>
+        </tr>
+        <tr>
+            <td>EMS</td>
+            <td>Prof Joubert</td>
+        </tr>
+        <tr>
+            <td>Education</td>
+            <td>Prof Ndofirepi</td>
+        </tr>
+        <tr>
+            <td>Humanities</td>
+            <td>Prof Viljoen</td> <!-- Fixed the </td> here -->
+        </tr>
+    </table>
+    <br>
 
-</p>
-
-
-<table>
-<tr>
-<th>Falcuties</th>
-<th>Deans</th>
-</tr>
-
-<tr>
-<td>NAS</td>
-<td>Prof Ntwaeborwa</td>
-</tr>
-
-<tr>
-<td>EMS</td>
-<td>Prof Joubert</td>
-</tr>
-
-<tr>
-<td>Education</td>
-<td>Prof Ndofirepi</td>
-</tr>
-
-<tr>
-<td>Humanities</td>
-<td>Prof Viljoen</d>
-
-</tr>
-</table>
-<br>
-
- <button onclick="showDateTime()">Date and Time</button>
+    <button onclick="showDateTime()">Date and Time</button>
     <p id="datetime"></p>
 
     <script>
@@ -76,7 +51,5 @@ table, th, td {
             document.getElementById("datetime").innerHTML = new Date();
         }
     </script>
-
-
 </body>
 </html>
